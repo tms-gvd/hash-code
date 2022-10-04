@@ -1,4 +1,4 @@
-name: CI
+name: Coverage - Pylint
 on: push
 
 jobs:
@@ -47,5 +47,5 @@ jobs:
           github_token: ${{ secrets.github_token }}
           branch: ${{ github.ref }}
 
-      - name: Check code with Pylint
-        run: poetry run pylint pycheckio
+      - name: Check src code with Pylint
+        run: poetry run pylint src
