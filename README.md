@@ -1,5 +1,6 @@
 # hash-code
-Joint work of ZHANG and GAVIARD
+Joint work of ZHANG and GAVIARD  
+![coverage badge](./coverage.svg)
 
 ## To-Do List
 ---
