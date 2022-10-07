@@ -1,5 +1,15 @@
+<<<<<<< HEAD
 name: Coverage - Pylint
 on: push
+=======
+name: CI
+on:
+  push:
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ main ]
+>>>>>>> c143745e893babfe4c8237769d0a2aab430dd06f
 
 jobs:
   ci:
@@ -39,7 +49,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add coverage.svg
-          git commit -m "Updated coverage.svg"
+          git commit -m "auto: Updated coverage.svg"
       - name: Push changes
         if: steps.changed_files.outputs.files_changed == 'true'
         uses: ad-m/github-push-action@master
@@ -47,5 +57,9 @@ jobs:
           github_token: ${{ secrets.github_token }}
           branch: ${{ github.ref }}
 
+<<<<<<< HEAD
       - name: Check src code with Pylint
+=======
+      - name: Check code with Pylint
+>>>>>>> c143745e893babfe4c8237769d0a2aab430dd06f
         run: poetry run pylint src

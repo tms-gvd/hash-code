@@ -1,8 +1,3 @@
 # hash-code
-Joint work of ZHANG and GAVIARD  
+Joint work of ZHANG and GAVIARD for [Hash-Code](https://storage.googleapis.com/coding-competitions.appspot.com/HC/2021/world_finals_2021.pdf)  
 ![coverage badge](./coverage.svg)
-
-## To-Do List
-- poetry project: structure, package management
-- pytest, unittest
-
