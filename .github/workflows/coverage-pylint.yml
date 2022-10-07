@@ -1,15 +1,10 @@
-<<<<<<< HEAD
 name: Coverage - Pylint
-on: push
-=======
-name: CI
 on:
   push:
     tags:
       - 'v*'
   pull_request:
     branches: [ main ]
->>>>>>> c143745e893babfe4c8237769d0a2aab430dd06f
 
 jobs:
   ci:
