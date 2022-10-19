@@ -52,8 +52,8 @@ jobs:
           github_token: ${{ secrets.github_token }}
           branch: ${{ github.ref }}
 
-      - name: Check src code with Pylint
-        run: poetry run pylint src
+      #- name: Check src code with Pylint
+      #  run: poetry run pylint src
 
       - name: Build documentation
         run: |
