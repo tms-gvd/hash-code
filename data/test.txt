@@ -1,0 +1,22 @@
+100 100 5 3 8 2
+s-aaa 0
+s-aab 0
+s-aac 0
+s-aad 0
+s-aae 1
+f-aaa 2 33 21117
+aad aae
+f-aab 2 70 54975
+aaa aac
+f-aac 4 81 63569
+aad aaa aac aab
+f-aad 5 72 29000
+aac aaa aad aae aab
+f-aae 5 81 86481
+aaa aad aae aab aac
+f-aaf 3 36 94683
+aad aae aab
+f-aag 2 1 28961
+aab aac
+f-aah 5 12 95038
+aae aac aad aaa aab
