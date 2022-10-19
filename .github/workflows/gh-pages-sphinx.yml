@@ -1,0 +1,43 @@
+
+name: Sphinx-pages
+on:
+  push:
+  pull_request:
+    branches: [ gh-pages ]
+
+jobs:
+  ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10.6"]
+        poetry-version: ["1.2.1"]
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run image
+        uses: abatilo/actions-poetry@v2
+        with:
+          poetry-version: ${{ matrix.poetry-version }}
+
+      - name: Install packages
+        run: python -m poetry install
+
+      - name: Build documentation
+              run: |
+                mkdir gh-pages
+                touch gh-pages/.nojekyll
+                cd docs/
+                poetry run sphinx-build -b html . _build
+                cp -r _build/* ../gh-pages/
+
+      - name: Deploy documentation
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          folder: gh-pages
