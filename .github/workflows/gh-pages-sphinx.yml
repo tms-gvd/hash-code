@@ -2,7 +2,6 @@
 name: Sphinx-pages
 on:
   push:
-  pull_request:
     branches: [ gh-pages ]
 
 jobs:
