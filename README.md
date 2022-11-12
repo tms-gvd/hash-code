@@ -18,11 +18,11 @@ The problem to be solved is described in detail at this [File](https://storage.g
 
 The input of this problem is a text file, its format is like this:
 
-<img src="./readmeImage/inputFormatExample.png" alt="inputFormatExample" style="zoom: 45%;" />
+<img src="https://p0.meituan.net/dpplatform/497ccc757e89ef2203a8c741fcb4bfda137023.png" alt="inputFormatExample" style="zoom: 40%;" />
 
 The output of this problem is also a text file, its format is like this:
 
-<img src="./readmeImage/outputFormatExample.png" alt="inputFormatExample" style="zoom: 45%;" />
+<img src="https://p0.meituan.net/dpplatform/3f0f2220d1bf297cad3da1dc38214b2786729.png" alt="outputformatExample" style="zoom: 40%;" />
 
 The goal of the solution is to assign work to engineers to implement features that will benefit as many users as possible. And to be able to complete the development of all FEATURES within a specific deadline.
 
