@@ -1,7 +1,8 @@
-src
-===
+hash-code
+=========
 
 .. toctree::
    :maxdepth: 4
 
-   helloworld
+   src
+   tests
